@@ -67,7 +67,7 @@ main p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  font-family: "poppins";
+  font-family: "poppins", sans-serif;
 }
 
 main ul {
@@ -76,13 +76,6 @@ main ul {
   justify-content: flex-start;
   padding-left: 7%;
   gap: 5%;
-}
-
-.frontpage ul {
-  display: flex;
-}
-
-main ul {
   padding-bottom: 25%;
 }
 
