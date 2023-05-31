@@ -76,15 +76,6 @@ git clone https://github.com/mj-e-boc/M-J-Portfolio.git
 open the project using:
 cd folder-name
 
-### Install
-
-Install this project
-
-### Usage
-
-To run the project:
-
-click on go Live on the bottom of VsCode, and view it on the screen.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,6 +131,6 @@ I would like to thank the microverse Alumni that keep inspiring me to code.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
