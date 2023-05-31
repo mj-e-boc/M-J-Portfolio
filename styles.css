@@ -1,5 +1,5 @@
 body {
-  font-family: "Crete Round";
+  font-family: "Crete Round", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -21,6 +21,7 @@ nav h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
+  font-family: "Crete Round", serif;
   font-family: "Poppins", sans-serif;
 }
 
@@ -52,6 +53,7 @@ main h3 {
   font-weight: 700;
   font-size: 24px;
   margin-top: 2%;
+  font-family: "Crete Round", serif;
   font-family: "Poppins", sans-serif;
 }
 
@@ -60,7 +62,7 @@ main p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Crete Round", serif;
 }
 
 main ul {
