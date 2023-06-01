@@ -25,8 +25,7 @@ header a {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  font-family: "Crete Round", serif;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header :nth-child(2) {
@@ -57,7 +56,6 @@ main .intro {
   font-weight: 700;
   font-size: 24px;
   margin-top: 2%;
-  font-family: "Crete Round", serif;
   font-family: "Poppins", sans-serif;
   line-height: 24px;
 }
