@@ -65,7 +65,7 @@ main p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 main ul {
@@ -143,7 +143,7 @@ main ul {
   font-size: 15px;
   line-height: 20px;
   color: #091e42;
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 button :hover {
@@ -173,7 +173,7 @@ button :active {
 }
 
 .card p {
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -202,6 +202,7 @@ button :active {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  font-family: "Inter", sans-serif;
 }
 
 .card2 h2 {
@@ -223,7 +224,7 @@ button :active {
 .card2 li {
   background-color: rgba(255, 255, 255, 0.24);
   padding: 3%;
-  font-family: "poppins" sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -231,7 +232,7 @@ button :active {
 }
 
 .card2 p {
-  font-family: "poppins" sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -249,7 +250,7 @@ button :active {
 .myself ul {
   list-style-type: none;
   color: #fff;
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   padding-left: 0;
 }
 
@@ -263,7 +264,7 @@ button :active {
 }
 
 .paraself {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -282,7 +283,7 @@ button :active {
   border: none;
 }
 
-b .myselftext {
+.myselftext {
   width: 90%;
   margin: auto;
 }
@@ -309,6 +310,7 @@ hr {
   gap: 5%;
   justify-content: center;
   margin-bottom: 5%;
+  font-family: "InaiMathi", sans-serif;
 }
 
 .languagescenter {
@@ -318,7 +320,7 @@ hr {
 
 .item {
   margin-bottom: 4%;
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
