@@ -131,6 +131,6 @@ I would like to thank the microverse Alumni that keep inspiring me to code.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT]([https://choosealicense.com/licenses/mit/](https://github.com/mj-e-boc/M-J-Portfolio/blob/front-page/LICENSE)) licensed.
+This project is [MIT](https://choosealicense.com/licenses/mit/](https://github.com/mj-e-boc/M-J-Portfolio/blob/front-page/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
