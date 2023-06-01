@@ -93,15 +93,17 @@ main ul {
 .works {
   display: grid;
   justify-items: center;
+  margin-bottom: 30%;
 }
 
 .projimage {
   display: flex;
   justify-content: center;
 }
+
 .recent {
   color: #1c1a19;
-  font-family: "Crete Round";
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -141,7 +143,22 @@ main ul {
   font-size: 15px;
   line-height: 20px;
   color: #091e42;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+}
+
+button :hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+button :active {
+  color: #f4f1f0;
+  background-color: #e05304;
 }
 
 .card button {
@@ -151,12 +168,12 @@ main ul {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: #ffffff;
+  color: #fff;
   border: none;
 }
 
 .card p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -170,7 +187,7 @@ main ul {
   background-size: 100%;
   width: 90%;
   object-fit: cover;
-  color: #ffffff;
+  color: #fff;
   padding-top: 30%;
   margin-top: 0;
 }
@@ -180,7 +197,7 @@ main ul {
   width: 100%;
   border: none;
   padding: 3%;
-  color: #ffffff;
+  color: #fff;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -206,7 +223,7 @@ main ul {
 .card2 li {
   background-color: rgba(255, 255, 255, 0.24);
   padding: 3%;
-  font-family: "Inter";
+  font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -214,15 +231,11 @@ main ul {
 }
 
 .card2 p {
-  font-family: "Inter";
+  font-family: "Inter" sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-}
-
-.works {
-  margin-bottom: 30%;
 }
 
 .myself {
@@ -236,7 +249,7 @@ main ul {
 .myself ul {
   list-style-type: none;
   color: #fff;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   padding-left: 0;
 }
 
@@ -250,7 +263,7 @@ main ul {
 }
 
 .paraself {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -269,25 +282,13 @@ main ul {
   border: none;
 }
 
-button :hover {
-  background-color: #fff5e1;
-  color: #f55800;
-}
-
-button {
-  cursor: pointer;
-}
-
-button :active {
-  color: #f4f1f0;
-  background-color: #e05304;
-}
-
-.myselftext {
+b .myselftext {
   width: 90%;
   margin: auto;
 }
-/*languages*/
+
+/* languages */
+
 .mylanguages {
   background-color: #1c1a19;
   padding-top: 30%;
@@ -317,7 +318,7 @@ hr {
 
 .item {
   margin-bottom: 4%;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
