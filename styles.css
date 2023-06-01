@@ -87,3 +87,240 @@ main ul {
 .frontpage {
   padding: 0 5%;
 }
+
+/* Works */
+
+.works {
+  display: grid;
+  justify-items: center;
+}
+
+.projimage {
+  display: flex;
+  justify-content: center;
+}
+.recent {
+  color: #1c1a19;
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  padding-top: 25%;
+  border-bottom: 1px solid #212121;
+  padding-bottom: 10%;
+  margin-bottom: 15%;
+}
+
+.card {
+  padding-bottom: 15%;
+  margin: auto;
+  width: 90%;
+}
+
+.cardheader {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.card ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5%;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.card li {
+  border: 1px solid #8993a4;
+  padding: 4%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  font-family: "Inter";
+}
+
+.card button {
+  padding: 3%;
+  background-color: #ff6b00;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #ffffff;
+  border: none;
+}
+
+.card p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.card2 {
+  background-image: url(./images/projects/project\ background.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 90%;
+  object-fit: cover;
+  color: #ffffff;
+  padding-top: 30%;
+  margin-top: 0;
+}
+
+.card2 button {
+  background-color: #ff6b00;
+  width: 100%;
+  border: none;
+  padding: 3%;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.card2 h2 {
+  width: 70%;
+}
+
+.card2 .textitems {
+  padding: 0 5%;
+}
+
+.card2 ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  gap: 5%;
+  padding-left: 0;
+}
+
+.card2 li {
+  background-color: rgba(255, 255, 255, 0.24);
+  padding: 3%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.card2 p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.works {
+  margin-bottom: 30%;
+}
+
+.myself {
+  background-image: url(./images/projects/backgroundimage.svg);
+  background-position: right 25%;
+  background-repeat: no-repeat;
+  padding: 18% 0 30% 0;
+  background-color: #1c1a19;
+}
+
+.myself ul {
+  list-style-type: none;
+  color: #fff;
+  font-family: "Inter";
+  padding-left: 0;
+}
+
+.myself h2 {
+  color: #ff6b00;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  margin-bottom: 0;
+}
+
+.paraself {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+
+.myself button {
+  background-color: #ff6b00;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 3%;
+  border: none;
+}
+
+button :hover {
+  background-color: #fff5e1;
+  color: #f55800;
+}
+
+button {
+  cursor: pointer;
+}
+
+button :active {
+  color: #f4f1f0;
+  background-color: #e05304;
+}
+
+.myselftext {
+  width: 90%;
+  margin: auto;
+}
+/*languages*/
+.mylanguages {
+  background-color: #1c1a19;
+  padding-top: 30%;
+  margin-top: 0;
+}
+
+hr {
+  margin-top: 55%;
+  width: 90%;
+}
+
+.forflex {
+  display: flex;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  gap: 5%;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.languagescenter {
+  text-align: center;
+  padding-top: 20%;
+}
+
+.item {
+  margin-bottom: 4%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
+}
