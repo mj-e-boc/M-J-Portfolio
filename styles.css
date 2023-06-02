@@ -207,6 +207,10 @@ button :active {
 
 .card2 h2 {
   width: 70%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .card2 .textitems {
@@ -237,6 +241,8 @@ button :active {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  width: 62%;
+  padding-bottom: 3%;
 }
 
 .myself {
