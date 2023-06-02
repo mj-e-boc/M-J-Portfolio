@@ -188,9 +188,8 @@ button :active {
   background-repeat: no-repeat;
   background-size: 100%;
   width: 90%;
-  object-fit: cover;
   color: #fff;
-  padding-top: 30%;
+  padding-top: 10%;
   margin-top: 0;
 }
 
@@ -216,7 +215,7 @@ button :active {
 }
 
 .card2 .textitems {
-  padding: 0 5%;
+  padding-left: 5%;
 }
 
 .card2 ul {
