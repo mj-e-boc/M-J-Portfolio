@@ -115,9 +115,11 @@ main ul {
 }
 
 .card {
+  display: flex;
   padding-bottom: 15%;
   margin: auto;
   width: 90%;
+  flex-direction: column;
 }
 
 .cardheader {
