@@ -360,47 +360,10 @@ input {
   color: #979493;
   margin-bottom: 5%;
   border-bottom: 1px solid #dbd8d7;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
 }
 
-form button {
-  width: 40%;
-  margin: auto;
-  background-color: #f55800;
-  padding: 5%;
-  color: #fff;
-  border: none;
-}
-
-.inputhr {
-  color: red;
-}
-
-textarea {
-  margin-bottom: 5%;
-  border: none;
-  background-color: #fbf8f7;
-  padding: 3%;
-}
-
-.contactsection ul {
-  display: flex;
-  gap: 5%;
-  list-style-type: none;
-  justify-content: center;
-  padding-left: 0;
-  margin-bottom: 4%;
-  padding-bottom: 15%;
-}
-
-.hrb {
-  display: flex;
-  j5px;ustify-content: center;
-  margin-top: 20%;
-}
-
-.hrc {
-  width: 40%;
-  padding: 3px;
-  background-color: #0d151e;
-  border-radius: 10px;
-}
