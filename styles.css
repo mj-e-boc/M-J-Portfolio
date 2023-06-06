@@ -163,6 +163,18 @@ button :active {
   background-color: #e05304;
 }
 
+form button {
+  width: 40%;
+  margin: auto;
+  background-color: #f55800;
+  padding: 5%;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+}
+
 .card button {
   padding: 3%;
   background-color: #ff6b00;
@@ -303,7 +315,7 @@ button :active {
   margin-top: 0;
 }
 
-hr {
+.hra {
   margin-top: 55%;
   width: 90%;
 }
@@ -333,4 +345,74 @@ hr {
   font-size: 22px;
   line-height: 43px;
   color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactsection p {
+  color: #172b4d;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.contactsection {
+  padding: 20% 8% 0 8%;
+}
+
+input {
+  border: none;
+  padding-bottom: 3%;
+  color: #979493;
+  margin-bottom: 5%;
+  border-bottom: 1px solid #dbd8d7;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.inputhr {
+  color: red;
+}
+
+textarea {
+  margin-bottom: 5%;
+  border: none;
+  background-color: #fbf8f7;
+  height: 114px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.contactsection ul {
+  display: flex;
+  gap: 5%;
+  list-style-type: none;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 4%;
+  padding-bottom: 15%;
+}
+
+.rectangle {
+  display: flex;
+  justify-content: center;
+  margin: 20% 0 8% 0;
+}
+
+.hrc {
+  width: 40%;
+  padding: 3px;
+  background-color: #0d151e;
+  border-radius: 10px;
 }
