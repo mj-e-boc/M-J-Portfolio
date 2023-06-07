@@ -201,8 +201,10 @@ form button {
   background-size: 100%;
   width: 90%;
   color: #fff;
-  padding-top: 10%;
+  padding-bottom: 0;
   margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card2 button {
@@ -417,11 +419,250 @@ textarea {
   border-radius: 10px;
 }
 
-@media (min-width: 768px) {
+/* MEDIUM SCREEN SIZES */
+
+@media screen and (min-width: 768px) and (max-width: 1079px) {
+  .myself {
+    background-image: url(./images/desky/Frame.svg);
+    background-size: 80%;
+    background-position: left 50% right;
+  }
+  header a {
+    color: #fff;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .frontpage {
+    margin-bottom: 10%;
+  }
   main {
     background-color: #1c1a19;
     background-image: url(./images/desky/group.svg);
-    background-size: 50%;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: top 0% right;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: flex-end;
+    padding-bottom: 2%;
+  }
+
+  header ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20%;
+    gap: 15%;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 10%;
+  }
+
+  header {
+    background-color: #3c3a39;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+
+  main ul {
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 4%;
+    padding-bottom: 0;
+    align-items: flex-end;
+  }
+
+  .frontpage ul {
+    flex-direction: column;
+  }
+
+  main section {
+    width: 50%;
+  }
+
+  .recent {
+    color: #1c1a19;
+    line-height: 52px;
+    border-bottom: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .line {
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5% 5%;
+  }
+
+  .line img {
+    max-width: 50%;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .projimage {
+    display: inline;
+    float: left;
+    width: 90%;
+  }
+
+  .card button {
+    padding: 1%;
+    background-color: #ff6b00;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    border: none;
+    width: 40%;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+  }
+
+  .text {
+    max-width: 40%;
+    padding-right: 0;
+  }
+
+  .cardheader {
+    margin-top: 0;
+  }
+
+  .card li {
+    padding: 2%;
+  }
+
+  .grids {
+    width: 80%;
+    display: flex;
+    gap: 4%;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    padding-bottom: 0;
+  }
+
+  .card2 {
+    background-image: url(./images/projects/project\ background.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30%;
+    color: #fff;
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-bottom: -80%;
+  }
+
+  .card2 p {
+    font-size: 8px;
+    margin-top: 0;
+  }
+  .card2 h2 {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  .card2 li {
+    font-size: 10%;
+    padding: 0.5%;
+  }
+
+  .card2 ul {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .grids :nth-child(2) button,
+  .grids :nth-child(3) button,
+  .grids :nth-child(4) button,
+  .grids :nth-child(5) button,
+  .grids :nth-child(6) button {
+    display: none;
+  }
+  .grids :nth-child(4) button,
+  .grids :nth-child(5) button,
+  .grids :nth-child(6) button {
+    padding-top: 0;
+  }
+  .myself {
+    background-image: url(./images/projects/backgroundimage.svg);
+    background-position: right 25%;
+    background-repeat: no-repeat;
+    padding: 1% 0 30% 0;
+    background-color: #1c1a19;
+  }
+
+  .works {
+    margin-bottom: 5%;
+  }
+}
+
+/* mobileview */
+
+@media (max-width: 768px) {
+  header ul {
+    display: none;
+  }
+  .line img {
+    display: none;
+  }
+}
+
+/* large screens */
+
+@media screen and (min-width: 1080px) and (max-width: 1400px) {
+  .myself {
+    background-image: url(./images/desky/backNew.svg);
+  }
+  .card2 p {
+    font-size: 5px;
+    margin-top: 0;
+  }
+  .card2 h2 {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+  .card2 li {
+    font-size: 10%;
+    padding: 0.5%;
+  }
+
+  .card2 ul {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  main {
+    background-color: #1c1a19;
+    background-image: url(./images/desky/group.svg);
+    background-size: 45%;
     background-repeat: no-repeat;
     background-position: top 0% right;
   }
@@ -460,6 +701,7 @@ textarea {
   }
 
   main {
+    padding-top: 5%;
     display: flex;
     flex-direction: row-reverse;
     align-items: baseline;
@@ -481,7 +723,308 @@ textarea {
   }
 
   main section {
-    width: 40%;
+    width: 30%;
+  }
+
+  .recent {
+    color: #1c1a19;
+    line-height: 52px;
+
+    border-bottom: none;
+
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .line {
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5% 5%;
+  }
+
+  .line img {
+    max-width: 65%;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .projimage {
+    display: inline;
+    float: left;
+    width: 90%;
+  }
+
+  .card button {
+    padding: 2%;
+    background-color: #ff6b00;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    border: none;
+    width: 30%;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+  }
+
+  .text {
+    max-width: 40%;
+    padding-right: 0;
+  }
+
+  .cardheader {
+    margin-top: 0;
+  }
+
+  .card li {
+    padding: 2%;
+  }
+
+  .grids {
+    width: 80%;
+    display: flex;
+    gap: 4%;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    padding-bottom: 0;
+  }
+
+  .card2 {
+    background-image: url(./images/projects/project\ background.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30%;
+    color: #fff;
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-bottom: 5%;
+  }
+
+  .grids :nth-child(2) button,
+  .grids :nth-child(3) button,
+  .grids :nth-child(4) button,
+  .grids :nth-child(5) button,
+  .grids :nth-child(6) button {
+    display: none;
+  }
+  .grids :nth-child(4) button,
+  .grids :nth-child(5) button,
+  .grids :nth-child(6) button {
+    padding-top: 0;
+  }
+  .myself {
+    background-image: url(./images/projects/backgroundimage.svg);
+    background-position: right 25%;
+    background-repeat: no-repeat;
+    padding: 1% 0 30% 0;
+    background-color: #1c1a19;
+  }
+
+  .works {
+    margin-bottom: 5%;
+  }
+}
+
+/* Extra large screens */
+
+@media (min-width: 1400px) {
+  main {
+    background-color: #1c1a19;
+    background-image: url(./images/desky/group.svg);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: top 0% right;
+  }
+
+  header a {
+    color: #fff;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .myself {
+    background-image: url(./images/desky/Frame.svg);
+  }
+
+  header ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20%;
+    gap: 15%;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 10%;
+  }
+
+  header {
+    background-color: #3c3a39;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+
+  main {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: flex-end;
+    padding-bottom: 25%;
+  }
+
+  main ul {
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 4%;
+    padding-bottom: 0;
+    align-items: flex-end;
+  }
+
+  .frontpage ul {
+    flex-direction: column;
+  }
+
+  main section {
+    width: 30%;
+  }
+
+  .recent {
+    color: #1c1a19;
+    line-height: 52px;
+
+    border-bottom: none;
+
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .line {
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5% 5%;
+  }
+
+  .line img {
+    max-width: 65%;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .projimage {
+    display: inline;
+    float: left;
+    width: 90%;
+  }
+
+  .card button {
+    padding: 2%;
+    background-color: #ff6b00;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    border: none;
+    width: 30%;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+  }
+
+  .text {
+    max-width: 40%;
+    padding-right: 0;
+  }
+
+  .cardheader {
+    margin-top: 0;
+  }
+
+  .card li {
+    padding: 2%;
+  }
+
+  .grids {
+    width: 80%;
+    display: flex;
+    gap: 4%;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    padding-bottom: 0;
+  }
+
+  .card2 {
+    background-image: url(./images/projects/project\ background.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30%;
+    color: #fff;
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-bottom: 5%;
+  }
+
+  .grids :nth-child(2) button,
+  .grids :nth-child(3) button,
+  .grids :nth-child(4) button,
+  .grids :nth-child(5) button,
+  .grids :nth-child(6) button {
+    display: none;
+  }
+  .grids :nth-child(4) button,
+  .grids :nth-child(5) button,
+  .grids :nth-child(6) button {
+    padding-top: 0;
+  }
+  .myself {
+    background-image: url(./images/projects/backgroundimage.svg);
+    background-position: right 25%;
+    background-repeat: no-repeat;
+    padding: 1% 0 30% 0;
+    background-color: #1c1a19;
+  }
+
+  .works {
+    margin-bottom: 5%;
   }
 }
 
@@ -489,6 +1032,9 @@ textarea {
 
 @media (max-width: 768px) {
   header ul {
+    display: none;
+  }
+  .line img {
     display: none;
   }
 }
