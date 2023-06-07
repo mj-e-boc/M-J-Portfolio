@@ -18,7 +18,7 @@ a {
   text-decoration: none;
 }
 
-header a {
+.logo {
   margin-right: auto;
   margin-left: 5%;
   color: #fff;
@@ -28,7 +28,7 @@ header a {
   font-family: "Roboto", sans-serif;
 }
 
-header :nth-child(2) {
+.bars {
   margin-right: 5%;
 }
 
@@ -415,4 +415,80 @@ textarea {
   padding: 3px;
   background-color: #0d151e;
   border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  main {
+    background-color: #1c1a19;
+    background-image: url(./images/desky/group.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: top 0% right;
+  }
+
+  header a {
+    color: #fff;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  header ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20%;
+    gap: 15%;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 10%;
+  }
+
+  header {
+    background-color: #3c3a39;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: flex-end;
+    padding-bottom: 25%;
+  }
+
+  main ul {
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 4%;
+    padding-bottom: 0;
+    align-items: flex-end;
+  }
+
+  .frontpage ul {
+    flex-direction: column;
+  }
+
+  main section {
+    width: 40%;
+  }
+}
+
+/* mobileview */
+
+@media (max-width: 768px) {
+  header ul {
+    display: none;
+  }
 }
