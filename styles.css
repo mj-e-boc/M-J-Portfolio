@@ -77,6 +77,17 @@ main ul {
   padding-bottom: 25%;
 }
 
+.crossimage1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 9%;
+  max-width: 100vw;
+}
+
+.crossimage1 img {
+  min-width: 100vw;
+}
+
 .bar {
   width: 25px;
   height: 3px;
@@ -135,6 +146,18 @@ main ul {
   gap: 5%;
   list-style-type: none;
   padding-left: 0;
+}
+
+.tofix {
+  display: flex;
+  align-items: center;
+}
+
+.tofix img {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  margin-bottom: 5%;
 }
 
 .card li {
@@ -198,10 +221,10 @@ form button {
 .card2 {
   background-image: url(./images/projects/project\ background.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   width: 90%;
   color: #fff;
-  padding-bottom: 0;
+  padding-bottom: 0%;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
@@ -254,9 +277,9 @@ form button {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
-  width: 62%;
+  width: 100%;
   padding-bottom: 3%;
 }
 
@@ -421,15 +444,93 @@ textarea {
 
 /* MEDIUM SCREEN SIZES */
 
-@media screen and (min-width: 768px) and (max-width: 1079px) {
+@media screen and (min-width: 768px) and (max-width: 1080px) {
   .myself {
-    background-image: url(./images/desky/Frame.svg);
-    background-size: 80%;
-    background-position: left 50% right;
+    background-image: none;
+    padding: 0;
   }
+
+  .myselftext {
+    width: 40%;
+    margin: 0 5%;
+  }
+
+  .hrbottom {
+    margin-top: 10%;
+  }
+
+  .contactsection {
+    /* margin-bottom: 10%; */
+    padding: 4% 8%;
+    margin-bottom: 0;
+  }
+
+  .contactsection p {
+    padding-bottom: 10%;
+    width: 40%;
+    text-align: left;
+    float: left;
+    padding-right: 4%;
+  }
+
+  header ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20%;
+    gap: 15%;
+  }
+
+  main ul {
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 4%;
+    padding-bottom: 0;
+    align-items: flex-end;
+  }
+
+  .contactsection ul {
+    gap: 3%;
+    margin-bottom: 0;
+  }
+
+  .fullname {
+    display: none;
+  }
+
+  .deskcontact {
+    display: flex;
+    gap: 1%;
+    justify-content: flex-end;
+  }
+
+  .deskcontact :nth-child(1) {
+    margin-right: auto;
+  }
+
+  .deskcontact input {
+    min-width: 45%;
+  }
+
+  form button {
+    margin-left: 0;
+    padding: 1%;
+    width: 25%;
+  }
+
+  .hra {
+    margin-top: 20%;
+  }
+
+  .languagescenter {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+
   header a {
     color: #fff;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -439,6 +540,7 @@ textarea {
   .frontpage {
     margin-bottom: 10%;
   }
+
   main {
     background-color: #1c1a19;
     background-image: url(./images/desky/group.svg);
@@ -451,13 +553,6 @@ textarea {
     align-items: baseline;
     justify-content: flex-end;
     padding-bottom: 2%;
-  }
-
-  header ul {
-    list-style: none;
-    display: flex;
-    margin-right: 20%;
-    gap: 15%;
   }
 
   .bars {
@@ -475,15 +570,6 @@ textarea {
     justify-content: flex-end;
     padding-bottom: 1%;
     padding-top: 1%;
-  }
-
-  main ul {
-    justify-content: flex-end;
-    flex-direction: column;
-    gap: 12px;
-    padding-left: 4%;
-    padding-bottom: 0;
-    align-items: flex-end;
   }
 
   .frontpage ul {
@@ -536,6 +622,7 @@ textarea {
     border: none;
     width: 40%;
   }
+
   .card {
     display: flex;
     flex-direction: row;
@@ -570,7 +657,7 @@ textarea {
   .card2 {
     background-image: url(./images/projects/project\ background.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     width: 30%;
     color: #fff;
     padding-top: 0;
@@ -578,20 +665,23 @@ textarea {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
-    padding-bottom: -80%;
+    padding-bottom: -90%;
   }
 
   .card2 p {
-    font-size: 8px;
+    font-size: 17px;
     margin-top: 0;
+    width: 100%;
   }
+
   .card2 h2 {
-    font-size: 15px;
+    font-size: 32px;
     margin-bottom: 0;
   }
+
   .card2 li {
     font-size: 10%;
-    padding: 0.5%;
+    padding: 3%;
   }
 
   .card2 ul {
@@ -606,52 +696,157 @@ textarea {
   .grids :nth-child(6) button {
     display: none;
   }
+
   .grids :nth-child(4) button,
   .grids :nth-child(5) button,
   .grids :nth-child(6) button {
     padding-top: 0;
   }
-  .myself {
-    background-image: url(./images/projects/backgroundimage.svg);
-    background-position: right 25%;
-    background-repeat: no-repeat;
-    padding: 1% 0 30% 0;
-    background-color: #1c1a19;
-  }
 
   .works {
     margin-bottom: 5%;
   }
-}
 
-/* mobileview */
+  form {
+    margin-top: 3%;
+  }
 
-@media (max-width: 768px) {
-  header ul {
+  .rectangle img {
     display: none;
   }
-  .line img {
+
+  .rectangle hr {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+
+  .rectangle {
+    margin: 0;
     display: none;
+  }
+
+  .hrc {
+    display: none;
+  }
+
+  .grids :nth-child(4),
+  .grids :nth-child(5),
+  .grids :nth-child(6) {
+    margin-top: 2%;
   }
 }
 
-/* large screens */
+/************************************** LARGE SCREEN ***********************************/
 
 @media screen and (min-width: 1080px) and (max-width: 1400px) {
   .myself {
-    background-image: url(./images/desky/backNew.svg);
+    background-image: none;
+    padding: 0;
   }
-  .card2 p {
-    font-size: 5px;
-    margin-top: 0;
+
+  .rectangle {
+    display: none;
   }
-  .card2 h2 {
-    font-size: 10px;
+
+  main ul {
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 4%;
+    padding-bottom: 0;
+    align-items: flex-end;
+  }
+
+  .myselftext {
+    width: 40%;
+    margin-left: 10%;
+  }
+
+  .hrc {
+    display: none;
+  }
+
+  header ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20%;
+    gap: 15%;
+  }
+
+  .contactsection ul {
+    padding-bottom: 0;
     margin-bottom: 0;
   }
+
+  .contactsection p {
+    width: 40%;
+    text-align: left;
+    float: left;
+    padding-right: 4%;
+  }
+
+  .fullname {
+    display: none;
+  }
+
+  .languagescenter {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+
+  .deskcontact {
+    display: flex;
+    gap: 1%;
+    justify-content: flex-end;
+  }
+
+  .deskcontact :nth-child(1) {
+    margin-right: auto;
+  }
+
+  .deskcontact input {
+    min-width: 45%;
+  }
+
+  form button {
+    margin-left: 0;
+    padding: 1%;
+    width: 25%;
+  }
+
+  .hra {
+    margin-top: 20%;
+  }
+
+  .card2 p {
+    font-size: 17px;
+    margin-top: 0;
+  }
+
+  .card2 h2 {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+
   .card2 li {
-    font-size: 10%;
-    padding: 0.5%;
+    font-size: ;
+    padding: 3%;
+  }
+
+  .card2 {
+    background-size: cover;
+    background-image: url(./images/projects/project\ background.svg);
+    background-repeat: no-repeat;
+    width: 30%;
+    color: #fff;
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-bottom: 5%;
   }
 
   .card2 ul {
@@ -665,22 +860,21 @@ textarea {
     background-size: 45%;
     background-repeat: no-repeat;
     background-position: top 0% right;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: flex-end;
+    padding-bottom: 25%;
   }
 
   header a {
     color: #fff;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
-  }
-
-  header ul {
-    list-style: none;
-    display: flex;
-    margin-right: 20%;
-    gap: 15%;
   }
 
   .bars {
@@ -700,24 +894,6 @@ textarea {
     padding-top: 1%;
   }
 
-  main {
-    padding-top: 5%;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: baseline;
-    justify-content: flex-end;
-    padding-bottom: 25%;
-  }
-
-  main ul {
-    justify-content: flex-end;
-    flex-direction: column;
-    gap: 12px;
-    padding-left: 4%;
-    padding-bottom: 0;
-    align-items: flex-end;
-  }
-
   .frontpage ul {
     flex-direction: column;
   }
@@ -729,9 +905,7 @@ textarea {
   .recent {
     color: #1c1a19;
     line-height: 52px;
-
     border-bottom: none;
-
     text-align: left;
     padding: 0;
     margin: 0;
@@ -770,6 +944,7 @@ textarea {
     border: none;
     width: 30%;
   }
+
   .card {
     display: flex;
     flex-direction: row;
@@ -801,20 +976,6 @@ textarea {
     padding-bottom: 0;
   }
 
-  .card2 {
-    background-image: url(./images/projects/project\ background.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 30%;
-    color: #fff;
-    padding-top: 0;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    padding-bottom: 5%;
-  }
-
   .grids :nth-child(2) button,
   .grids :nth-child(3) button,
   .grids :nth-child(4) button,
@@ -822,46 +983,44 @@ textarea {
   .grids :nth-child(6) button {
     display: none;
   }
+
   .grids :nth-child(4) button,
   .grids :nth-child(5) button,
   .grids :nth-child(6) button {
     padding-top: 0;
   }
-  .myself {
-    background-image: url(./images/projects/backgroundimage.svg);
-    background-position: right 25%;
-    background-repeat: no-repeat;
-    padding: 1% 0 30% 0;
-    background-color: #1c1a19;
-  }
 
   .works {
     margin-bottom: 5%;
+  }
+
+  .contactsection {
+    padding: 4% 8%;
+    margin-bottom: 0;
+  }
+
+  form {
+    margin-top: 3%;
+  }
+
+  .grids :nth-child(4),
+  .grids :nth-child(5),
+  .grids :nth-child(6) {
+    margin-top: 2%;
   }
 }
 
 /* Extra large screens */
 
 @media (min-width: 1400px) {
-  main {
-    background-color: #1c1a19;
-    background-image: url(./images/desky/group.svg);
-    background-size: 45%;
-    background-repeat: no-repeat;
-    background-position: top 0% right;
-  }
-
-  header a {
-    color: #fff;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
   .myself {
-    background-image: url(./images/desky/Frame.svg);
+    background-image: none;
+    padding-top: 5%;
+  }
+
+  .myselftext {
+    width: 40%;
+    margin-left: 15%;
   }
 
   header ul {
@@ -869,6 +1028,91 @@ textarea {
     display: flex;
     margin-right: 20%;
     gap: 15%;
+  }
+
+  main ul {
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 4%;
+    padding-bottom: 0;
+    align-items: flex-end;
+  }
+
+  .contactsection ul {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 2%;
+    gap: 1%;
+  }
+
+  main {
+    background-color: #1c1a19;
+    background-image: url(./images/desky/group.svg);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: top 0% right;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: flex-end;
+    padding-bottom: 25%;
+  }
+
+  .languagescenter {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+
+  .contactsection p {
+    width: 40%;
+    text-align: left;
+    float: left;
+    padding-right: 4%;
+  }
+
+  .fullname {
+    display: none;
+  }
+
+  .deskcontact {
+    display: flex;
+    gap: 1%;
+    justify-content: flex-end;
+  }
+
+  .deskcontact :nth-child(1) {
+    margin-right: auto;
+  }
+
+  .deskcontact input {
+    min-width: 45%;
+  }
+
+  form button {
+    margin-left: 0;
+    padding: 1%;
+    width: 15%;
+  }
+
+  .contactsection {
+    padding: 4% 8%;
+    margin-bottom: 0;
+  }
+
+  form {
+    margin-top: 3%;
+  }
+
+  header a {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .bars {
@@ -888,24 +1132,6 @@ textarea {
     padding-top: 1%;
   }
 
-  main {
-    padding-top: 5%;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: baseline;
-    justify-content: flex-end;
-    padding-bottom: 25%;
-  }
-
-  main ul {
-    justify-content: flex-end;
-    flex-direction: column;
-    gap: 12px;
-    padding-left: 4%;
-    padding-bottom: 0;
-    align-items: flex-end;
-  }
-
   .frontpage ul {
     flex-direction: column;
   }
@@ -917,9 +1143,7 @@ textarea {
   .recent {
     color: #1c1a19;
     line-height: 52px;
-
     border-bottom: none;
-
     text-align: left;
     padding: 0;
     margin: 0;
@@ -941,6 +1165,10 @@ textarea {
     width: 100%;
   }
 
+  .card2 h2 {
+    padding-top: 40%;
+  }
+
   .projimage {
     display: inline;
     float: left;
@@ -958,6 +1186,7 @@ textarea {
     border: none;
     width: 30%;
   }
+
   .card {
     display: flex;
     flex-direction: row;
@@ -983,7 +1212,7 @@ textarea {
   .grids {
     width: 80%;
     display: flex;
-    gap: 4%;
+    gap: 3%;
     flex-wrap: wrap;
     margin-top: 5%;
     padding-bottom: 0;
@@ -992,7 +1221,7 @@ textarea {
   .card2 {
     background-image: url(./images/projects/project\ background.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     width: 30%;
     color: #fff;
     padding-top: 0;
@@ -1000,7 +1229,7 @@ textarea {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
-    padding-bottom: 5%;
+    padding-bottom: 0.5%;
   }
 
   .grids :nth-child(2) button,
@@ -1010,21 +1239,33 @@ textarea {
   .grids :nth-child(6) button {
     display: none;
   }
+
   .grids :nth-child(4) button,
   .grids :nth-child(5) button,
   .grids :nth-child(6) button {
     padding-top: 0;
   }
-  .myself {
-    background-image: url(./images/projects/backgroundimage.svg);
-    background-position: right 25%;
-    background-repeat: no-repeat;
-    padding: 1% 0 30% 0;
-    background-color: #1c1a19;
+
+  .grids :nth-child(4),
+  .grids :nth-child(5),
+  .grids :nth-child(6) {
+    margin-top: 2%;
   }
 
   .works {
     margin-bottom: 5%;
+  }
+
+  .rectangle {
+    display: none;
+  }
+
+  .hrc {
+    display: none;
+  }
+
+  .hra {
+    margin-top: 30%;
   }
 }
 
@@ -1034,7 +1275,16 @@ textarea {
   header ul {
     display: none;
   }
+
   .line img {
+    display: none;
+  }
+
+  .deskcontact {
+    display: none;
+  }
+
+  .tofix img {
     display: none;
   }
 }
