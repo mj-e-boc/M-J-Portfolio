@@ -179,6 +179,7 @@ button :hover {
 
 button {
   cursor: pointer;
+  z-index: 1;
 }
 
 button :active {
@@ -749,6 +750,10 @@ textarea {
   .grids :nth-child(6) {
     margin-top: 2%;
   }
+
+  #card1 ul {
+    display: none;
+  }
 }
 
 /************************************** LARGE SCREEN ***********************************/
@@ -837,11 +842,17 @@ textarea {
   .card2 p {
     font-size: 17px;
     margin-top: 0;
+    position: absolute;
+    bottom: 15%;
+    width: 95%;
   }
 
   .card2 h2 {
     font-size: 32px;
     margin-bottom: 0;
+    position: absolute;
+    bottom: 40%;
+    width: 95%;
   }
 
   .card2 li {
@@ -869,18 +880,6 @@ textarea {
     margin-top: 0;
     position: absolute;
     bottom: 3%;
-  }
-
-  .card2 p {
-    position: absolute;
-    bottom: 15%;
-    width: 95%;
-  }
-
-  .card2 h2 {
-    position: absolute;
-    bottom: 40%;
-    width: 95%;
   }
 
   .card2 button {
@@ -1042,6 +1041,10 @@ textarea {
   .grids :nth-child(6) {
     margin-top: 2%;
   }
+
+  #card1 ul {
+    display: none;
+  }
 }
 
 /* EXTRA LARGE SCREEN */
@@ -1201,6 +1204,9 @@ textarea {
 
   .card2 h2 {
     padding-top: 40%;
+    position: absolute;
+    bottom: 40%;
+    width: 95%;
   }
 
   .projimage {
@@ -1278,12 +1284,6 @@ textarea {
   .card2 p {
     position: absolute;
     bottom: 15%;
-    width: 95%;
-  }
-
-  .card2 h2 {
-    position: absolute;
-    bottom: 40%;
     width: 95%;
   }
 
