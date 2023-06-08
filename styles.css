@@ -174,11 +174,11 @@ main ul {
 button :hover {
   background-color: #fff5e1;
   color: #f55800;
-  cursor: popoppins;
+  cursor: pointer;
 }
 
 button {
-  cursor: popoppins;
+  cursor: pointer;
 }
 
 button :active {
@@ -426,7 +426,7 @@ textarea {
   justify-content: center;
   padding-left: 0;
   margin-bottom: 4%;
-  padding-bottom: 15%;
+  padding-bottom: 5%;
 }
 
 .rectangle {
@@ -516,6 +516,7 @@ textarea {
     margin-left: 0;
     padding: 1%;
     width: 25%;
+    margin-bottom: 5%;
   }
 
   .hra {
@@ -666,17 +667,23 @@ textarea {
     margin-right: 0;
     margin-bottom: 0;
     padding-bottom: -90%;
+    position: relative;
+    min-height: 500px;
   }
 
   .card2 p {
     font-size: 17px;
     margin-top: 0;
     width: 100%;
+    position: absolute;
+    bottom: 15%;
   }
 
   .card2 h2 {
     font-size: 32px;
     margin-bottom: 0;
+    position: absolute;
+    bottom: 50%;
   }
 
   .card2 li {
@@ -684,9 +691,16 @@ textarea {
     padding: 3%;
   }
 
+  .card2 button {
+    position: absolute;
+    bottom: 0;
+  }
+
   .card2 ul {
     padding-top: 0;
     margin-top: 0;
+    position: absolute;
+    bottom: 5%;
   }
 
   .grids :nth-child(2) button,
@@ -846,11 +860,32 @@ textarea {
     margin-right: 0;
     margin-bottom: 0;
     padding-bottom: 5%;
+    position: relative;
+    min-height: 500px;
   }
 
   .card2 ul {
     padding-top: 0;
     margin-top: 0;
+    position: absolute;
+    bottom: 3%;
+  }
+
+  .card2 p {
+    position: absolute;
+    bottom: 15%;
+    width: 95%;
+  }
+
+  .card2 h2 {
+    position: absolute;
+    bottom: 40%;
+    width: 95%;
+  }
+
+  .card2 button {
+    position: absolute;
+    bottom: 0;
   }
 
   main {
@@ -1009,7 +1044,7 @@ textarea {
   }
 }
 
-/* Extra large screens */
+/* EXTRA LARGE SCREEN */
 
 @media (min-width: 1400px) {
   .myself {
@@ -1229,6 +1264,32 @@ textarea {
     margin-right: 0;
     margin-bottom: 0;
     padding-bottom: 0.5%;
+    position: relative;
+    min-height: 478px;
+  }
+
+  .card2 ul {
+    padding-top: 0;
+    margin-top: 0;
+    position: absolute;
+    bottom: 3%;
+  }
+
+  .card2 p {
+    position: absolute;
+    bottom: 15%;
+    width: 95%;
+  }
+
+  .card2 h2 {
+    position: absolute;
+    bottom: 40%;
+    width: 95%;
+  }
+
+  .card2 button {
+    position: absolute;
+    bottom: 0;
   }
 
   .grids :nth-child(2) button,
@@ -1236,6 +1297,10 @@ textarea {
   .grids :nth-child(4) button,
   .grids :nth-child(5) button,
   .grids :nth-child(6) button {
+    display: none;
+  }
+
+  #card1 ul {
     display: none;
   }
 
