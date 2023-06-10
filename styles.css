@@ -171,22 +171,6 @@ main ul {
   font-family: "Inter", sans-serif;
 }
 
-button :hover {
-  background-color: #fff5e1;
-  color: #f55800;
-  cursor: pointer;
-}
-
-button {
-  cursor: pointer;
-  z-index: 1;
-}
-
-button :active {
-  color: #f4f1f0;
-  background-color: #e05304;
-}
-
 form button {
   width: 40%;
   margin: auto;
@@ -254,6 +238,7 @@ form button {
 
 .card2 .textitems {
   padding-left: 5%;
+  padding-right: 5%;
 }
 
 .card2 ul {
@@ -426,8 +411,6 @@ textarea {
   list-style-type: none;
   justify-content: center;
   padding-left: 0;
-  margin-bottom: 4%;
-  padding-bottom: 5%;
 }
 
 .rectangle {
@@ -451,6 +434,18 @@ textarea {
     padding: 0;
   }
 
+  form button {
+    margin-left: 0;
+    padding: 1%;
+    width: 25%;
+    margin-bottom: 5%;
+  }
+
+  .card2 button {
+    position: absolute;
+    bottom: 0;
+  }
+
   .myselftext {
     width: 40%;
     margin: 0 5%;
@@ -461,7 +456,6 @@ textarea {
   }
 
   .contactsection {
-    /* margin-bottom: 10%; */
     padding: 4% 8%;
     margin-bottom: 0;
   }
@@ -511,13 +505,6 @@ textarea {
 
   .deskcontact input {
     min-width: 45%;
-  }
-
-  form button {
-    margin-left: 0;
-    padding: 1%;
-    width: 25%;
-    margin-bottom: 5%;
   }
 
   .hra {
@@ -692,11 +679,6 @@ textarea {
     padding: 3%;
   }
 
-  .card2 button {
-    position: absolute;
-    bottom: 0;
-  }
-
   .card2 ul {
     padding-top: 0;
     margin-top: 0;
@@ -764,6 +746,17 @@ textarea {
     padding: 0;
   }
 
+  form button {
+    margin-left: 0;
+    padding: 1%;
+    width: 25%;
+  }
+
+  .card2 button {
+    position: absolute;
+    bottom: 0;
+  }
+
   .rectangle {
     display: none;
   }
@@ -829,12 +822,6 @@ textarea {
     min-width: 45%;
   }
 
-  form button {
-    margin-left: 0;
-    padding: 1%;
-    width: 25%;
-  }
-
   .hra {
     margin-top: 20%;
   }
@@ -880,11 +867,6 @@ textarea {
     margin-top: 0;
     position: absolute;
     bottom: 3%;
-  }
-
-  .card2 button {
-    position: absolute;
-    bottom: 0;
   }
 
   main {
@@ -1055,6 +1037,17 @@ textarea {
     padding-top: 5%;
   }
 
+  form button {
+    margin-left: 0;
+    padding: 1%;
+    width: 15%;
+  }
+
+  .card2 button {
+    position: absolute;
+    bottom: 0;
+  }
+
   .myselftext {
     width: 40%;
     margin-left: 15%;
@@ -1126,12 +1119,6 @@ textarea {
 
   .deskcontact input {
     min-width: 45%;
-  }
-
-  form button {
-    margin-left: 0;
-    padding: 1%;
-    width: 15%;
   }
 
   .contactsection {
@@ -1285,11 +1272,7 @@ textarea {
     position: absolute;
     bottom: 15%;
     width: 95%;
-  }
-
-  .card2 button {
-    position: absolute;
-    bottom: 0;
+    margin: auto;
   }
 
   .grids :nth-child(2) button,
@@ -1331,6 +1314,10 @@ textarea {
   .hra {
     margin-top: 30%;
   }
+
+  .textitems {
+    z-index: -1;
+  }
 }
 
 /* mobileview */
@@ -1351,4 +1338,15 @@ textarea {
   .tofix img {
     display: none;
   }
+}
+
+button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
 }
