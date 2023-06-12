@@ -54,7 +54,7 @@ Built with HTML and CSS
 
 Link to be added
 
-- [Live Demo Link]()
+- [Live Demo Link](https://mj-e-boc.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,7 +75,6 @@ git clone https://github.com/mj-e-boc/M-J-Portfolio.git
 
 open the project using:
 cd folder-name
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
