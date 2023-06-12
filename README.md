@@ -52,7 +52,7 @@ Built with HTML and CSS
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [https://mj-e-boc.github.io/]
+- [Live Demo Link](https://mj-e-boc.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
