@@ -174,7 +174,7 @@ main ul {
 form button {
   width: 40%;
   margin: auto;
-  background-color: #f55800;
+  background-color: #993800;
   padding: 5%;
   color: #fff;
   border: none;
@@ -432,6 +432,14 @@ textarea {
   .myself {
     background-image: none;
     padding: 0;
+  }
+
+  main p {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 18px;
   }
 
   form button {
@@ -746,6 +754,10 @@ textarea {
     padding: 0;
   }
 
+  .card p {
+    font-size: 18px;
+  }
+
   form button {
     margin-left: 0;
     padding: 1%;
@@ -1035,6 +1047,10 @@ textarea {
   .myself {
     background-image: none;
     padding-top: 5%;
+  }
+
+  .card p {
+    font-size: 18px;
   }
 
   form button {
@@ -1338,27 +1354,19 @@ textarea {
   .tofix img {
     display: none;
   }
+
+  main p {
+    font-size: 18px;
+  }
 }
 
 button:hover {
   background-color: #fff5e1;
-  color: #f55800;
-  border: 1px solid #f55800;
+  color: #993800;
+  border: 1px solid #993800;
 }
 
 button:active {
-  background-color: #e05304;
+  background-color: #963903;
   color: #f4f1f0;
 }
-
-/* jdkjao;fjdsopjfojapo[sdf
-faodjs[fo[foasjk[odfkopds
-
-adsojf[pakdsopkfposkpofkpodskpof
-fsdopkaf[posdk
-*/
-/* “Hfjibdidjdjdkdjjdjjdjsjsjsdndjd
-Snsnsjjsjsjsjdjdjjd
-Djdjdjjdkkdikdkkskkkdj
-Dhjdjskksjskkdkd
-Bjdjdkskskkskkkssbnsjsjk” */
