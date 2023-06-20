@@ -19,5 +19,8 @@ function hideMenu() {
 document.querySelectorAll(".navMenu li").forEach((n) =>
   n.addEventListener("click", function () {
     navMenu.style.left = "200%";
+    if ((n = 0)) {
+      window.location = "google.com";
+    }
   })
 );
