@@ -426,6 +426,95 @@ textarea {
   border-radius: 10px;
 }
 
+/* modal styling */
+
+.popup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(59.2%, 58%, 57.6%, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  width: 80%;
+  padding: 5%;
+}
+
+.modal-card ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  padding-left: 0;
+  gap: 4%;
+  padding-top: 4%;
+}
+
+.modal-card li {
+  border: 1px solid #3c3a39;
+  padding: 2%;
+}
+
+.modal-card button {
+  background-color: #ff6b00;
+  width: 45%;
+  color: #fff;
+  border: none;
+}
+
+.buttonstyle {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4%;
+}
+
+.buttonstyle :nth-child(1) {
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin-left: 2%;
+}
+
+.modal-card h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.fixingbutton {
+  margin-right: 8%;
+}
+
+.buttonstyling {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonstyling :nth-child(1) {
+  margin-right: auto;
+}
+
+.buttonstyling :nth-child(2) {
+  margin-right: auto;
+}
+
+.popupcancel {
+  position: absolute;
+  right: 12%;
+  top: 14%;
+  cursor: pointer;
+}
+
 /* MEDIUM SCREEN SIZES */
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
@@ -1333,6 +1422,95 @@ textarea {
 
   .textitems {
     z-index: -1;
+  }
+
+  /* modal styling */
+
+  .popup-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(59.2%, 58%, 57.6%, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-content {
+    width: 60%;
+    height: 65%;
+    background-color: white;
+    width: 80%;
+    padding: 5%;
+  }
+
+  .modal-card ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    padding-left: 0;
+    gap: 4%;
+    padding-top: 4%;
+  }
+
+  .modal-card li {
+    border: 1px solid #3c3a39;
+    padding: 2%;
+  }
+
+  .modal-card button {
+    background-color: #ff6b00;
+    width: 45%;
+    color: #fff;
+    border: none;
+  }
+
+  .buttonstyle {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4%;
+  }
+
+  .buttonstyle :nth-child(1) {
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    margin-left: 2%;
+  }
+
+  .modal-card h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .fixingbutton {
+    margin-right: 8%;
+  }
+
+  .buttonstyling {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .buttonstyling :nth-child(1) {
+    margin-right: auto;
+  }
+
+  .buttonstyling :nth-child(2) {
+    margin-right: auto;
+  }
+
+  .popupcancel {
+    position: absolute;
+    right: 12%;
+    top: 14%;
+    cursor: pointer;
   }
 }
 
