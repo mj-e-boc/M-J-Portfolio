@@ -508,6 +508,11 @@ textarea {
   margin-right: auto;
 }
 
+.popupimage {
+  display: flex;
+  justify-content: center;
+}
+
 .popupcancel {
   position: absolute;
   right: 12%;
