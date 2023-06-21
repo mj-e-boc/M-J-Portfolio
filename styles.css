@@ -1442,13 +1442,12 @@ textarea {
     justify-content: center;
     align-items: center;
   }
-
   .popup-content {
-    width: 60%;
-    height: 65%;
-    background-color: white;
     width: 80%;
-    padding: 5%;
+    height: 70%;
+    background-color: white;
+
+    padding: 2%;
   }
 
   .modal-card ul {
@@ -1456,18 +1455,18 @@ textarea {
     list-style-type: none;
     justify-content: flex-start;
     padding-left: 0;
-    gap: 4%;
-    padding-top: 4%;
+    gap: 1%;
+    padding-top: 0.5%;
   }
 
   .modal-card li {
     border: 1px solid #3c3a39;
-    padding: 2%;
+    padding: 0.5%;
   }
 
   .modal-card button {
     background-color: #ff6b00;
-    width: 45%;
+    width: 25%;
     color: #fff;
     border: none;
   }
@@ -1498,17 +1497,41 @@ textarea {
     margin-right: 8%;
   }
 
+  .popup p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 80%;
+  }
+
   .buttonstyling {
     display: flex;
     justify-content: flex-end;
+    margin-top: auto;
+    /* margin-bottom: -40px; */
   }
 
   .buttonstyling :nth-child(1) {
-    margin-right: auto;
+    margin-right: 3%;
   }
 
   .buttonstyling :nth-child(2) {
     margin-right: auto;
+  }
+
+  .popupimage {
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+    width: 50%;
+  }
+
+  .popupimage img {
+    width: 100%;
+    padding-right: 5%;
   }
 
   .popupcancel {
