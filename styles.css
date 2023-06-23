@@ -450,8 +450,12 @@ textarea {
 }
 
 .modal-card h2 {
-  color: #172b4d;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
   line-height: 44px;
+  color: #172b4d;
 }
 
 .modal-card ul {
@@ -487,14 +491,6 @@ textarea {
   font-size: 17px;
   line-height: 24px;
   margin-left: 2%;
-}
-
-.modal-card h2 {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
 }
 
 .fixingbutton {
