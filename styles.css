@@ -446,7 +446,6 @@ textarea {
   width: 80%;
   height: 80%;
   background-color: white;
-  width: 80%;
   padding: 5%;
 }
 
@@ -1361,6 +1360,15 @@ textarea {
     margin: auto;
   }
 
+  .modal-card ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    padding-left: 0;
+    gap: 1%;
+    padding-top: 0.5%;
+  }
+
   #card1 ul {
     display: none;
   }
@@ -1404,6 +1412,7 @@ textarea {
     justify-content: center;
     align-items: center;
   }
+
   .popup-content {
     width: 80%;
     height: 70%;
@@ -1411,14 +1420,7 @@ textarea {
     padding: 2%;
   }
 
-  .modal-card ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-start;
-    padding-left: 0;
-    gap: 1%;
-    padding-top: 0.5%;
-  }
+
 
   .modal-card li {
     border: 1px solid #3c3a39;
@@ -1463,7 +1465,7 @@ textarea {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
     width: 80%;
   }
@@ -1471,7 +1473,8 @@ textarea {
   .buttonstyling {
     display: flex;
     justify-content: flex-end;
-    margin-top: auto;
+    margin-top: 25%;
+
     /* margin-bottom: -40px; */
   }
 
