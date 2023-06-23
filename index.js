@@ -1,93 +1,91 @@
-const cancelButton = document.querySelector(".cancelicon");
-const hamburger = document.querySelector(".bars");
-const navMenu = document.querySelector(".navMenu");
+const cancelButton = document.querySelector('.cancelicon');
+const hamburger = document.querySelector('.bars');
+const navMenu = document.querySelector('.navMenu');
 
 function myFunction() {
-  navMenu.style.left = "200%";
+  navMenu.style.left = '200%';
 }
 
-cancelButton.addEventListener("click", myFunction);
+cancelButton.addEventListener('click', myFunction);
 
 function hideMenu() {
-  navMenu.style.left = "0";
+  navMenu.style.left = '0';
 }
 
-hamburger.addEventListener("click", hideMenu);
-document.querySelectorAll(".navMenu li").forEach((n) =>
-  n.addEventListener("click", () => {
-    navMenu.style.left = "200%";
-  })
-);
+hamburger.addEventListener('click', hideMenu);
+document.querySelectorAll('.navMenu li').forEach((n) => n.addEventListener('click', () => {
+  navMenu.style.left = '200%';
+}));
 
 // dynamic generation of cards
 
 const cardDetails = [
   {
-    id: "modal1",
-    backgroundImage: "images/projects/Img Placeholder.svg",
-    title: "value",
+    id: 'modal1',
+    backgroundImage: 'images/projects/Img Placeholder.svg',
+    title: 'value',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry",
-    technologies: ["HTML", "Bootstrap", "ruby"],
-    seeLive: "#",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
+    technologies: ['HTML', 'Bootstrap', 'ruby'],
+    seeLive: '#',
   },
 
   {
-    id: "modal2",
-    backgroundImage: "images/projects/project background.svg",
-    title: "Proffessional Art Printing Data",
+    id: 'modal2',
+    backgroundImage: 'images/projects/project background.svg',
+    title: 'Proffessional Art Printing Data',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry",
-    technologies: ["HTML", "Bootstrap", "ruby"],
-    seeLive: "#",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
+    technologies: ['HTML', 'Bootstrap', 'ruby'],
+    seeLive: '#',
   },
 
   {
-    id: "modal3",
-    backgroundImage: "images/projects/project background.svg",
-    title: "Proffessional Art Printing Data",
+    id: 'modal3',
+    backgroundImage: 'images/projects/project background.svg',
+    title: 'Proffessional Art Printing Data',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry",
-    technologies: ["HTML", "Bootstrap", "ruby"],
-    seeLive: "#",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
+    technologies: ['HTML', 'Bootstrap', 'ruby'],
+    seeLive: '#',
   },
 
   {
-    id: "modal4",
-    backgroundImage: "images/projects/project background.svg",
-    title: "Printing Data",
+    id: 'modal4',
+    backgroundImage: 'images/projects/project background.svg',
+    title: 'Printing Data',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry",
-    technologies: ["HTML", "Bootstrap", "ruby"],
-    seeLive: "#",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
+    technologies: ['HTML', 'Bootstrap', 'ruby'],
+    seeLive: '#',
   },
 
   {
-    id: "modal5",
-    backgroundImage: "images/projects/project background.svg",
-    title: "Proffessional Art Printing Data",
+    id: 'modal5',
+    backgroundImage: 'images/projects/project background.svg',
+    title: 'Proffessional Art Printing Data',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry",
-    technologies: ["HTML", "Bootstrap", "ruby"],
-    seeLive: "#",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
+    technologies: ['HTML', 'Bootstrap', 'ruby'],
+    seeLive: '#',
   },
 
   {
-    id: "modal6",
-    backgroundImage: "images/projects/project background.svg",
-    title: "Proffessional Art Printing Data",
+    id: 'modal6',
+    backgroundImage: 'images/projects/project background.svg',
+    title: 'Proffessional Art Printing Data',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry",
-    technologies: ["HTML", "Bootstrap", "ruby"],
-    seeLive: "#",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
+    technologies: ['HTML', 'Bootstrap', 'ruby'],
+    seeLive: '#',
   },
 ];
 
-const cardsContainer = document.querySelector(".grids");
+const cardsContainer = document.querySelector('.grids');
 const cardsMethods = () => {
   cardDetails.map((cardData) => {
-    const cardElement = document.createElement("div");
-    cardElement.classList.add("card2");
+    const cardElement = document.createElement('div');
+    cardElement.classList.add('card2');
     cardElement.style.backgroundImage = `${cardData.backgroundImage}`;
     cardElement.innerHTML = `
   <div class='textitems'>
@@ -110,12 +108,12 @@ const cardsMethods = () => {
 cardsMethods();
 
 // creating popup
-const popupContainer = document.querySelector(".popup-modal");
+const popupContainer = document.querySelector('.popup-modal');
 
 const popUpMethods = () => {
   cardDetails.every((popUpData) => {
-    const popUpContent = document.createElement("div");
-    popUpContent.classList.add("popup-content");
+    const popUpContent = document.createElement('div');
+    popUpContent.classList.add('popup-content');
     popUpContent.innerHTML = `<div class='modal-card'>
           <div class='popupcancel' data-close-button>
             <img
@@ -130,7 +128,7 @@ const popUpMethods = () => {
             <li>${popUpData.technologies[2]}</li>
           </ul>
           <div class='popupimage'>
-            <img src='./images/projects/Img Placeholder.svg' alt='' />
+            <img src='./images/popiest.svg' alt='' />
           </div>
           <div class='popupara'>
             <p>
@@ -164,18 +162,18 @@ const popUpMethods = () => {
 };
 
 popUpMethods();
-const modal = document.querySelector(".popup-modal");
-const modalButtons = document.querySelectorAll(".modal-open");
-const modalClose = document.querySelectorAll(".popupcancel");
+const modal = document.querySelector('.popup-modal');
+const modalButtons = document.querySelectorAll('.modal-open');
+const modalClose = document.querySelectorAll('.popupcancel');
 const modalMethods = () => {
   modalButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      modal.style.visibility = "visible";
+    btn.addEventListener('click', () => {
+      modal.style.visibility = 'visible';
     });
   });
   modalClose.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      if (btn.classList) modal.style.visibility = "hidden";
+    btn.addEventListener('click', () => {
+      if (btn.classList) modal.style.visibility = 'hidden';
     });
   });
 };

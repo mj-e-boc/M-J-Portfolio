@@ -521,12 +521,23 @@ textarea {
   cursor: pointer;
 }
 
+.popupimage img {
+  width: 90%;
+  padding-right: 5%;
+}
+
 /* MEDIUM SCREEN SIZES */
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
   .myself {
     background-image: none;
     padding: 0;
+  }
+
+  .buttonstyling {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20%;
   }
 
   main p {
@@ -841,14 +852,42 @@ textarea {
     padding: 0;
   }
 
-  .card p {
-    font-size: 18px;
+  .popupimage {
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+    width: 50%;
   }
 
   form button {
     margin-left: 0;
     padding: 1%;
     width: 25%;
+  }
+
+  .popupimage img {
+    width: 90%;
+    padding-right: 5%;
+  }
+
+  .modal-card li {
+    padding: 1%;
+  }
+
+  .buttonstyling {
+    margin-top: 18%;
+  }
+
+  .modal-card button {
+    width: 40%;
+  }
+
+  .popup-content {
+    padding-bottom: 5%;
+  }
+
+  .card p {
+    font-size: 18px;
   }
 
   .card2 button {
@@ -1471,9 +1510,7 @@ textarea {
   .buttonstyling {
     display: flex;
     justify-content: flex-end;
-    margin-top: 25%;
-
-    /* margin-bottom: -40px; */
+    margin-top: 20%;
   }
 
   .buttonstyling :nth-child(1) {
@@ -1492,7 +1529,7 @@ textarea {
   }
 
   .popupimage img {
-    width: 100%;
+    width: 90%;
     padding-right: 5%;
   }
 
