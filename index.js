@@ -23,10 +23,10 @@ const cardDetails = [
   {
     id: 'modal1',
     backgroundImage: 'images/projects/Img Placeholder.svg',
-    title: 'value',
+    title: 'Multipost-stories',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
-    technologies: ['HTML', 'Bootstrap', 'ruby'],
+    technologies: ['HTML', 'Bootstrap', 'ruby on rails'],
     seeLive: '#',
   },
 
@@ -36,7 +36,7 @@ const cardDetails = [
     title: 'Proffessional Art Printing Data',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
-    technologies: ['HTML', 'Bootstrap', 'ruby'],
+    technologies: ['HTML', 'Bootstrap', 'ruby on rails'],
     seeLive: '#',
   },
 
@@ -46,7 +46,7 @@ const cardDetails = [
     title: 'Proffessional Art Printing Data',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
-    technologies: ['HTML', 'Bootstrap', 'ruby'],
+    technologies: ['HTML', 'Bootstrap', 'ruby on rails'],
     seeLive: '#',
   },
 
@@ -56,7 +56,7 @@ const cardDetails = [
     title: 'Printing Data',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
-    technologies: ['HTML', 'Bootstrap', 'ruby'],
+    technologies: ['HTML', 'Bootstrap', 'ruby on rails'],
     seeLive: '#',
   },
 
@@ -66,7 +66,7 @@ const cardDetails = [
     title: 'Proffessional Art Printing Data',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
-    technologies: ['HTML', 'Bootstrap', 'ruby'],
+    technologies: ['HTML', 'Bootstrap', 'ruby on rails'],
     seeLive: '#',
   },
 
@@ -76,7 +76,7 @@ const cardDetails = [
     title: 'Proffessional Art Printing Data',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
-    technologies: ['HTML', 'Bootstrap', 'ruby'],
+    technologies: ['HTML', 'Bootstrap', 'ruby on rails'],
     seeLive: '#',
   },
 ];
