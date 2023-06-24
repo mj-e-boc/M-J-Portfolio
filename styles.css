@@ -791,7 +791,7 @@ textarea {
 
   .card2 li {
     font-size: 10%;
-    padding: 3%;
+    padding: 5%;
   }
 
   .card2 ul {
@@ -969,7 +969,7 @@ textarea {
     font-size: 17px;
     margin-top: 0;
     position: absolute;
-    bottom: 15%;
+    bottom: 20%;
     width: 95%;
   }
 
@@ -977,13 +977,15 @@ textarea {
     font-size: 32px;
     margin-bottom: 0;
     position: absolute;
-    bottom: 40%;
+    bottom: 50%;
     width: 95%;
   }
 
   .card2 li {
     padding: 3%;
   }
+
+
 
   .card2 {
     background-size: cover;
@@ -1406,7 +1408,7 @@ textarea {
     justify-content: flex-start;
     padding-left: 0;
     gap: 1%;
-    padding-top: 0.5%;
+    padding-top: 0;
   }
 
   #card1 ul {
@@ -1463,6 +1465,7 @@ textarea {
   .modal-card li {
     border: 1px solid #3c3a39;
     padding: 0.5%;
+    gap: 1%;
   }
 
   .modal-card button {

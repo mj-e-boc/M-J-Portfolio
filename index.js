@@ -21,62 +21,62 @@ document.querySelectorAll('.navMenu li').forEach((n) => n.addEventListener('clic
 
 const cardDetails = [
   {
-    id: 'modal1',
+    value: 'card1',
     backgroundImage: 'images/projects/Img Placeholder.svg',
-    title: 'Multipost-stories',
+    title: 'Card1',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
-    technologies: ['HTML', 'Bootstrap', 'ruby on rails'],
+    technologies: ['HTML', 'Bootstrap', 'python'],
     seeLive: '#',
   },
 
   {
-    id: 'modal2',
+    value: 'card2',
+    backgroundImage: 'images/projects/project background.svg',
+    title: 'card2',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
+    technologies: ['HTML', 'Bootstrap', 'python'],
+    seeLive: '#',
+  },
+
+  {
+    value: 'card3',
+    backgroundImage: 'images/projects/project background.svg',
+    title: 'card3',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
+    technologies: ['HTML', 'Bootstrap', 'python'],
+    seeLive: '#',
+  },
+
+  {
+    value: 'card4',
+    backgroundImage: 'images/projects/project background.svg',
+    title: 'card4',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
+    technologies: ['HTML', 'Bootstrap', 'python'],
+    seeLive: '#',
+  },
+
+  {
+    value: 'card5',
     backgroundImage: 'images/projects/project background.svg',
     title: 'Proffessional Art Printing Data',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
-    technologies: ['HTML', 'Bootstrap', 'ruby on rails'],
+    technologies: ['HTML', 'Bootstrap', 'python'],
     seeLive: '#',
   },
 
   {
-    id: 'modal3',
+    value: 'card6',
     backgroundImage: 'images/projects/project background.svg',
     title: 'Proffessional Art Printing Data',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
-    technologies: ['HTML', 'Bootstrap', 'ruby on rails'],
-    seeLive: '#',
-  },
-
-  {
-    id: 'modal4',
-    backgroundImage: 'images/projects/project background.svg',
-    title: 'Printing Data',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
-    technologies: ['HTML', 'Bootstrap', 'ruby on rails'],
-    seeLive: '#',
-  },
-
-  {
-    id: 'modal5',
-    backgroundImage: 'images/projects/project background.svg',
-    title: 'Proffessional Art Printing Data',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
-    technologies: ['HTML', 'Bootstrap', 'ruby on rails'],
-    seeLive: '#',
-  },
-
-  {
-    id: 'modal6',
-    backgroundImage: 'images/projects/project background.svg',
-    title: 'Proffessional Art Printing Data',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
-    technologies: ['HTML', 'Bootstrap', 'ruby on rails'],
+      'A daily selection of  privately personalized reads; no accounts or sign-ups required. Has been the industry',
+    technologies: ['HTML', 'Bootstrap', 'python'],
     seeLive: '#',
   },
 ];
@@ -99,7 +99,7 @@ const cardsMethods = () => {
               <li>${cardData.technologies[2]}</li>
             </ul>
           </div>
-          <button class='modal-open' 'id='${cardData.id}'>See project</button>`;
+          <button class='modal-open' class='${cardData.value}' onclick ='getId(this)'>See project</button>`;
     cardsContainer.appendChild(cardElement);
     return cardsContainer;
   });
@@ -108,31 +108,36 @@ const cardsMethods = () => {
 cardsMethods();
 
 // creating popup
-const popupContainer = document.querySelector('.popup-modal');
 
-const popUpMethods = () => {
-  cardDetails.every((popUpData) => {
-    const popUpContent = document.createElement('div');
-    popUpContent.classList.add('popup-content');
-    popUpContent.innerHTML = `<div class='modal-card'>
+const openPopUpButtons = document.querySelectorAll('.modal-open');
+const openModal = document.querySelector('.popup-modal');
+
+let v = 0;
+openPopUpButtons.forEach((btn) => {
+  v += 1;
+
+  const popContent = document.createElement('div');
+  popContent.classList.add('popup-content');
+  popContent.innerHTML = `
+  <div class='modal-card'>
           <div class='popupcancel' data-close-button>
             <img
               src='./images/projects/footericons/popupcancel.svg'
               alt='cancelbutton'
             />
           </div>
-          <h2>${popUpData.title}</h2>
+          <h2>${cardDetails[v - 1].title}</h2>
           <ul>
-            <li>${popUpData.technologies[0]}</li>
-            <li>${popUpData.technologies[1]}</li>
-            <li>${popUpData.technologies[2]}</li>
+            <li>${cardDetails[v - 1].technologies[0]}</li>
+            <li>${cardDetails[v - 1].technologies[1]}</li>
+            <li>${cardDetails[v - 1].technologies[2]}</li>
           </ul>
           <div class='popupimage'>
             <img src='./images/popiest.svg' alt='' />
           </div>
           <div class='popupara'>
             <p>
-             ${popUpData.description}
+             ${cardDetails[v - 1].description}
             </p>
           </div>
 
@@ -156,26 +161,19 @@ const popUpMethods = () => {
               </div>
             </button>
           </div>
-        </div>`;
-    popupContainer.appendChild(popUpContent);
-  });
-};
+        </div>
 
-popUpMethods();
-const modal = document.querySelector('.popup-modal');
-const modalButtons = document.querySelectorAll('.modal-open');
-const modalClose = document.querySelectorAll('.popupcancel');
-const modalMethods = () => {
-  modalButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      modal.style.visibility = 'visible';
+
+  `;
+  btn.addEventListener('click', () => {
+    document.querySelector('body').style.overflow = 'hidden';
+    openModal.appendChild(popContent);
+    openModal.style.visibility = 'visible';
+
+    document.querySelector('.popupcancel').addEventListener('click', () => {
+      openModal.removeChild(popContent);
+      openModal.style.visibility = 'hidden';
+      document.querySelector('body').style.overflow = 'scroll';
     });
   });
-  modalClose.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      if (btn.classList) modal.style.visibility = 'hidden';
-    });
-  });
-};
-
-modalMethods();
+});
