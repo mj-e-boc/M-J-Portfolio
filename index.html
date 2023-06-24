@@ -206,16 +206,27 @@
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
       </p>
-      <div id="error"></div>
-      <form action="https://formspree.io/f/moqzolvp" method="post">
+ 
+      <form action="https://formspree.io/f/moqzolvp" method="post" id='form'>
+        <input
+          placeholder="Fullname"
+          label="name"
+          type="name"
+        
+          id="fullname"
+          maxlength="30"
+          required="required"
+        />
         <div class="deskcontact">
+          
           <input type="text" name="Firstname" placeholder="Firstnames" />
           <input type="name" placeholder="Lastname" />
         </div>
+        
 
         <input
           type="email"
-          id="email"
+          id="imail"
           placeholder="Email"
           required="required
         "
@@ -230,7 +241,7 @@
           maxlength="500"
           required="required"
         ></textarea>
-        <button type="submit">Get in Touch</button>
+        <button type="submit" name='btnSubmit' id="submitbutton">Get in Touch</button>
       </form>
 
       <div class="rectangle">
