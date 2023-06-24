@@ -535,10 +535,14 @@ textarea {
     padding: 0;
   }
 
+  .popupimage img{
+    width: 80%;
+  }
+
   .buttonstyling {
     display: flex;
     justify-content: flex-end;
-    margin-top: 20%;
+    margin-top: 2%;
   }
 
   main p {
