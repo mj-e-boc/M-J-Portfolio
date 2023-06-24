@@ -14,6 +14,27 @@ header {
   padding-top: 8%;
 }
 
+.error.inaction::after {
+  content: '*';
+  color: red;
+}
+
+/* form validation */
+
+.error.inaction {
+  font-weight: 400;
+  line-height: 24px;
+  color: #172b4d;
+}
+
+.highlight {
+  border: 2px solid red;
+}
+
+.input:hover .highlight {
+  border-bottom: 2px solid red;
+}
+
 a {
   text-decoration: none;
 }
@@ -608,7 +629,7 @@ textarea {
     margin-bottom: 0;
   }
 
-  .fullname {
+  #fullname {
     display: none;
   }
 
@@ -941,7 +962,7 @@ textarea {
     padding-right: 4%;
   }
 
-  .fullname {
+  #fullname {
     display: none;
   }
 
@@ -1232,7 +1253,7 @@ textarea {
     padding-right: 4%;
   }
 
-  .fullname {
+  #fullname {
     display: none;
   }
 
