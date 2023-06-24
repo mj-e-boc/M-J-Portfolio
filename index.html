@@ -206,17 +206,8 @@
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
       </p>
-
+      <div id="error"></div>
       <form action="https://formspree.io/f/moqzolvp" method="post">
-        <input
-          placeholder="Fullname"
-          label="name"
-          type="name"
-          name="name"
-          class="fullname"
-          maxlength="30"
-          required="required"
-        />
         <div class="deskcontact">
           <input type="text" name="Firstname" placeholder="Firstnames" />
           <input type="name" placeholder="Lastname" />
@@ -224,8 +215,9 @@
 
         <input
           type="email"
+          id="email"
           placeholder="Email"
-          required="req
+          required="required
         "
         />
 
@@ -291,5 +283,6 @@
     </section>
     <div class="popup-modal" id="overlay"></div>
     <script src="index.js"></script>
+    <script src="validation.js"></script>
   </body>
 </html>
