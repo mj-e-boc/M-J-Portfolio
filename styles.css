@@ -426,12 +426,123 @@ textarea {
   border-radius: 10px;
 }
 
+/* modal styling */
+
+.popup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(59.2%, 58%, 57.6%, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.popup-content {
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  padding: 5%;
+}
+
+.modal-card h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.modal-card ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  padding-left: 0;
+  gap: 4%;
+  padding-top: 4%;
+}
+
+.modal-card li {
+  border: 1px solid #3c3a39;
+  padding: 2%;
+}
+
+.modal-card button {
+  background-color: #ff6b00;
+  width: 45%;
+  color: #fff;
+  border: none;
+}
+
+.buttonstyle {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4%;
+}
+
+.buttonstyle :nth-child(1) {
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin-left: 2%;
+}
+
+.fixingbutton {
+  margin-right: 8%;
+}
+
+.buttonstyling {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonstyling :nth-child(1) {
+  margin-right: auto;
+}
+
+.buttonstyling :nth-child(2) {
+  margin-right: auto;
+}
+
+.popupimage {
+  display: flex;
+  justify-content: center;
+}
+
+.popupcancel {
+  position: absolute;
+  right: 12%;
+  top: 14%;
+  cursor: pointer;
+}
+
+.popupimage img {
+  width: 95%;
+  padding-right: 5%;
+}
+
 /* MEDIUM SCREEN SIZES */
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
   .myself {
     background-image: none;
     padding: 0;
+  }
+
+  .popupimage img {
+    width: 80%;
+  }
+
+  .buttonstyling {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
   }
 
   main p {
@@ -684,7 +795,7 @@ textarea {
 
   .card2 li {
     font-size: 10%;
-    padding: 3%;
+    padding: 5%;
   }
 
   .card2 ul {
@@ -692,14 +803,6 @@ textarea {
     margin-top: 0;
     position: absolute;
     bottom: 5%;
-  }
-
-  .grids :nth-child(2) button,
-  .grids :nth-child(3) button,
-  .grids :nth-child(4) button,
-  .grids :nth-child(5) button,
-  .grids :nth-child(6) button {
-    display: none;
   }
 
   .grids :nth-child(4) button,
@@ -754,14 +857,42 @@ textarea {
     padding: 0;
   }
 
-  .card p {
-    font-size: 18px;
+  .popupimage {
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+    width: 50%;
   }
 
   form button {
     margin-left: 0;
     padding: 1%;
     width: 25%;
+  }
+
+  .popupimage img {
+    width: 90%;
+    padding-right: 5%;
+  }
+
+  .modal-card li {
+    padding: 1%;
+  }
+
+  .buttonstyling {
+    margin-top: 18%;
+  }
+
+  .modal-card button {
+    width: 40%;
+  }
+
+  .popup-content {
+    padding-bottom: 5%;
+  }
+
+  .card p {
+    font-size: 18px;
   }
 
   .card2 button {
@@ -842,7 +973,7 @@ textarea {
     font-size: 17px;
     margin-top: 0;
     position: absolute;
-    bottom: 15%;
+    bottom: 20%;
     width: 95%;
   }
 
@@ -850,7 +981,7 @@ textarea {
     font-size: 32px;
     margin-bottom: 0;
     position: absolute;
-    bottom: 40%;
+    bottom: 50%;
     width: 95%;
   }
 
@@ -878,7 +1009,7 @@ textarea {
     padding-top: 0;
     margin-top: 0;
     position: absolute;
-    bottom: 3%;
+    bottom: 8%;
   }
 
   main {
@@ -1003,20 +1134,6 @@ textarea {
     padding-bottom: 0;
   }
 
-  .grids :nth-child(2) button,
-  .grids :nth-child(3) button,
-  .grids :nth-child(4) button,
-  .grids :nth-child(5) button,
-  .grids :nth-child(6) button {
-    display: none;
-  }
-
-  .grids :nth-child(4) button,
-  .grids :nth-child(5) button,
-  .grids :nth-child(6) button {
-    padding-top: 0;
-  }
-
   .works {
     margin-bottom: 5%;
   }
@@ -1034,10 +1151,6 @@ textarea {
   .grids :nth-child(5),
   .grids :nth-child(6) {
     margin-top: 2%;
-  }
-
-  #card1 ul {
-    display: none;
   }
 }
 
@@ -1281,32 +1394,27 @@ textarea {
     padding-top: 0;
     margin-top: 0;
     position: absolute;
-    bottom: 3%;
+    bottom: 8%;
   }
 
   .card2 p {
     position: absolute;
-    bottom: 15%;
+    bottom: 20%;
     width: 95%;
     margin: auto;
   }
 
-  .grids :nth-child(2) button,
-  .grids :nth-child(3) button,
-  .grids :nth-child(4) button,
-  .grids :nth-child(5) button,
-  .grids :nth-child(6) button {
-    display: none;
+  .modal-card ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    padding-left: 0;
+    gap: 1%;
+    padding-top: 0;
   }
 
   #card1 ul {
     display: none;
-  }
-
-  .grids :nth-child(4) button,
-  .grids :nth-child(5) button,
-  .grids :nth-child(6) button {
-    padding-top: 0;
   }
 
   .grids :nth-child(4),
@@ -1333,6 +1441,109 @@ textarea {
 
   .textitems {
     z-index: -1;
+  }
+
+  /* modal styling */
+
+  .popup-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(59.2%, 58%, 57.6%, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-content {
+    width: 80%;
+    height: 70%;
+    background-color: white;
+    padding: 2%;
+  }
+
+  .modal-card li {
+    border: 1px solid #3c3a39;
+    padding: 0.5%;
+    gap: 1%;
+  }
+
+  .modal-card button {
+    background-color: #ff6b00;
+    width: 25%;
+    color: #fff;
+    border: none;
+  }
+
+  .buttonstyle {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4%;
+  }
+
+  .buttonstyle :nth-child(1) {
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    margin-left: 2%;
+  }
+
+  .modal-card h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .fixingbutton {
+    margin-right: 8%;
+  }
+
+  .popup p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: left;
+    width: 80%;
+  }
+
+  .buttonstyling {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20%;
+  }
+
+  .buttonstyling :nth-child(1) {
+    margin-right: 3%;
+  }
+
+  .buttonstyling :nth-child(2) {
+    margin-right: auto;
+  }
+
+  .popupimage {
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+    width: 50%;
+  }
+
+  .popupimage img {
+    width: 90%;
+    padding-right: 5%;
+  }
+
+  .popupcancel {
+    position: absolute;
+    right: 12%;
+    top: 14%;
+    cursor: pointer;
   }
 }
 
@@ -1421,11 +1632,3 @@ button:active {
   line-height: 44px;
   color: #fff5e1;
 }
-
-/* addd any comment below */
-
-/*
-
-add anything here
-
-*/
